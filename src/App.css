@@ -1,0 +1,8 @@
+.App {
+  overflow-y: auto;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.App::-webkit-scrollbar {
+  display: none;
+}

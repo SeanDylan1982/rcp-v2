@@ -1,0 +1,113 @@
+.ColorBox {
+  width: 20%;
+  height: 25%;
+  margin: 0;
+  display: inline-block;
+  position: relative;
+  pointer: cursor;
+}
+.ColorBox-copy-button {
+  width: 100px;
+  height: 30px;
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -15px;
+  text-align: center;
+  outline: none;
+  background: rgba(255,255,255,0.2);
+  font-size: 1rem;
+  line-height: 20px;
+  color: #f1f1f1;
+  text-transform: capitalize;
+  border: none;
+  opacity: 0;
+}
+
+.ColorBox:hover .ColorBox-copy-button {
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+
+.ColorBox-box-content {
+  position: relative;
+  width: 100%;
+  left: 5%;
+  top: 10px;
+  /* bottom: -155px; */
+  color: #1a1a1a;
+  letter-spacing: 1px;
+  font-size: .6rem;
+}
+
+.ColorBox-see-more {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  right: 10px;
+  bottom: -110px;
+  color: #1a1a1a;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: .6rem;
+  border: none;
+  pointer: cursor;
+  scale: 1;
+  transition: all .2s ease-in-out;
+}
+
+.ColorBox-see-more:hover {
+  scale: 1.1;
+  transform: translateX(-5px);
+  text-shadow: 1px 1px 10px rgba(255,255,255,1);
+  transition: all .2s ease-in-out;
+}
+
+.ColorBox-copy-overlay {
+  position: absolute;
+  opacity: 0;
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.1);
+  transition: transform 1s ease-in-out;
+}
+
+.ColorBox-copy-overlay.show {
+  position: absolute;
+  opacity: 1;
+  transform: scale(50);
+  z-index: 100;
+}
+
+.ColorBox-copy-message {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  transform: scale(0.1);
+  opacity: 0;
+  color: #f1f1f1;
+}
+
+.ColorBox-copy-message.show {
+  transition: all 0.4s ease-in-out;
+  transition-delay: 0.2s;
+  transform: scale(1);
+  opacity: 1;
+  z-index: 101;
+}
+
+.ColorBox-copy-message.show span {
+  margin-top: 0;
+  font-size: 2rem;
+  font-weight: 100;
+}

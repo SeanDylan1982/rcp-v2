@@ -1,0 +1,40 @@
+.Pallette {
+  margin: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+.Pallette-colors {
+  height: 87%;
+}
+
+.Pallette-footer {
+  display: flex;
+  position: relative;
+  bottom: 10px;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0 10px;
+  color: #1a1a1a;
+}
+
+.Pallette-name {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 10px 10px 0 10px;
+  text-transform: capitalize;
+}
+
+.Pallette-emoji {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  margin: 10px 0 0 0;
+}
+
+footer {
+  height: 15px;
+}

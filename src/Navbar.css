@@ -1,0 +1,67 @@
+.Navbar {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+}
+
+.Navbar-slider {
+  width: 30%;
+  height: 15px;
+  margin: 12px;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.rc-slider-track {
+  background-color: transparent;
+}
+
+.rc-slider-rail {
+  height: 8px;
+}
+
+.rc-slider-handle,
+.rc-slider-handle:active,
+.rc-slider-handle:focus,
+.rc-slider-handle:hover {
+  background-color: lime;
+  outline: none;
+  border: 2px solid lime;
+  box-shadow: none;
+  width: 13px;
+  margin-left: -3px;
+  margin-top: -3px;
+}
+
+.Navbar-logo {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  background-color: lightgrey;
+  width: 75px;
+  height: 100%;
+}
+
+.Navbar-logo a {
+  width: 10%;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.Navbar-level {
+  position: relative;
+  display: flex;
+  margin: 0 5px 0 30px;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.Navbar-select-container {
+  display: flex;
+  position: relative;
+  height: 40px;
+}
