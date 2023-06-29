@@ -1,11 +1,14 @@
 import chroma from 'chroma-js';
 import Home from './Home';
+import SingleColor from './SingleColor';
 const levels = [50, 100, 200, 300, 400, 500, 600, 700, 800, 900];
 
 function generatePallette(starterPallette) {
   const url = window.location.pathname;
   if (url === '/' || url === '') {
     return <Home />;
+  } else if (url === '/palette/:paletteId/:colorId') {
+    return <SingleColor />
   }
   let newPallette = {
     palletteName: starterPallette.palletteName,

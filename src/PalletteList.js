@@ -36,6 +36,9 @@ const styles = {
 }
 
 class PalletteList extends Component {
+  goToPallette(id) {
+    this.props.history.push(`/palette/${id}`);
+  }
   static defaultProps = {
     colors: seedColors,
   }
@@ -44,6 +47,7 @@ class PalletteList extends Component {
     this.state = {
       colors: seedColors,
     }
+    this.goToPallette = this.goToPallette.bind(this);
   }
   render() {
     const { pallettes, classes } = this.props;
@@ -55,8 +59,8 @@ class PalletteList extends Component {
           </nav>
           <div className={classes.pallettes}>
             {pallettes.map(pallette => (
-              <a href={`/palette/${pallette.id}`} style={{ textDecoration: "none", color: "#1a1a1a" }}>
-              <MiniPallette {...pallette} />
+              <a href={`/palette/${pallette.id}`} key={ pallette.id } style={{ textDecoration: "none", color: "#1a1a1a" }}>
+              <MiniPallette {...pallette} key={ pallette.id } />
               </a>
             ))}
           </div>

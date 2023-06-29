@@ -242,5 +242,32 @@ const seedColors = [
       { name: "ReefEncounter", color: "#079992" }
     ]
   },
+  {
+    paletteName: "Sean",
+    id: "sean-color-collection",
+    emoji: "🕓",
+    colors: [
+      { name: "orange", color: "#F46336" },
+      { name: "lightorange", color: "#E98E63" },
+      { name: "purple", color: "#9A27B0" },
+      { name: "blueish", color: "#679AB7" },
+      { name: "indigoish", color: "#7F58B1" },
+      { name: "bluer", color: "#1f91F3" },
+      { name: "lightpink", color: "#f3A9F4" },
+      { name: "aquacyan", color: "#00fCDf" },
+      { name: "darkteal", color: "#449688" },
+      { name: "brightgreen", color: "#4fdF50" },
+      { name: "lightcyan", color: "#3af9fA" },
+      { name: "limeyellow", color: "#CDDC56" },
+      { name: "brightyellow", color: "#e9ff3B" },
+      { name: "olive", color: "#556707" },
+      { name: "brightred", color: "#FF2f00" },
+      { name: "deeporange", color: "#F5722f" },
+      { name: "lushpink", color: "#a9454f" },
+      { name: "softpink", color: "#dE9E9E" },
+      { name: "deeplushpink", color: "#d07D8B" },
+      { name: "aquawhite", color: "#aaddFF" }
+    ]
+  },
 ];
 export default seedColors;

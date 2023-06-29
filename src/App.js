@@ -5,6 +5,7 @@ import Pallette from './Pallette';
 import './App.css';
 import { generatePallette } from './ColorHelpers';
 import Home from './Home';
+// import SingleColor from './SingleColor';
 
 class App extends Component {
   static defaultProps = {
@@ -28,7 +29,8 @@ class App extends Component {
             exact
             path="/"
             element={<Home />}
-            render={<Home />} />
+            render={<Home />}
+          />
           <Route 
           exact 
           path="/palette/:id" 
@@ -43,6 +45,19 @@ class App extends Component {
           />
           )}
           />
+          {/* <Route
+            path="/palette/:paletteId/:colorId"
+            element={<SingleColor pallette={generatePallette(
+              this.findPallette(url)
+            )}/>}
+            render={routeProps => (
+            <SingleColor 
+              pallette={generatePallette(
+                this.findPallette(url)
+              )}
+            />
+            )}
+          />             */}
         </Routes>
       </div>
     );

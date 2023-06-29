@@ -33,7 +33,7 @@ class Pallette extends Component {
     const { colors, id, emoji } = this.props.pallette;
     const { level, format } = this.state;
     const colorBoxes = colors[level].map(
-      color => <ColorBox background={color[format]} name={color.name} key={color.id} />);
+      color => <ColorBox background={color[format]} name={color.name} key={color.id} pallette={id} />);
     const action = (
     <React.Fragment>
       <Button color="secondary" size="small" onClick={this.handleClose}>
